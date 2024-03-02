@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Messaging Form</title>
+</head>
+<body>
+    <h2>Text Messaging Form</h2>
+    <form id="messageForm" method="POST" action="ChattingClientServlet">
+        <label for="message">Enter Message : </label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br>
+        <label for="protocol">Select Protocol:</label>
+        <select id="protocol" name="protocol" style="width: 100px">
+            <option value="tcp">TCP</option>
+            <option value="udp">UDP</option>
+        </select>
+        <input type="submit" value="Send" style="width: 100px ">
+    </form>
+    
+    
+</body>
+</html>
